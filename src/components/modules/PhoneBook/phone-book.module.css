@@ -1,0 +1,43 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 30px;
+}
+
+.block {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+    outline: 1px solid black;
+
+    border-radius: 5px;
+}
+
+.input {
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    max-width: 30%;
+
+    cursor: pointer;
+}
+
+.contacts__list{
+ list-style: none;
+ padding: 0px;
+
+}
+.contacts__item{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}

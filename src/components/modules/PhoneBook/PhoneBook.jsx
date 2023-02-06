@@ -70,6 +70,7 @@ class PhoneBook extends Component {
   }
 
   render() {
+    const { filter } = this.state;
     const contacts = this.getFilteredContacts();
     const { handleFilter, addContact, removeContact } = this;
 
@@ -81,7 +82,7 @@ class PhoneBook extends Component {
           </div>
           <div className={styles.block}>
             <h4>Contacts</h4>
-            <ContactsFilter handleChange={handleFilter} />
+            <ContactsFilter handleChange={handleFilter} filter={filter} />
             <ContactsList removeItem={removeContact} items={contacts} />
           </div>
         </div>
